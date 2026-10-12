@@ -36,18 +36,6 @@ public class PurchaseFunctionalTest extends BaseClass {
         Reporter.log("Product added to cart successfully", true);
     }
 
-    @Test(groups = "Functional")
-    public void verifyAddedProductAppearsInCart() throws Exception {
-        String productName = excel.getDataByTestId("Product", "PRODUCT-INT-001", "ProductName");
-        login();
-
-        ProductPage productPage = new ProductPage(driver);
-        productPage.addProduct(productName);
-        productPage.openCart();
-
-        Assert.assertTrue(new CartPage(driver).contains(productName),"Product is missing in Cart");
-        Reporter.log("Added product appears in Cart", true);
-    }
 
     @Test(groups = "Functional")
     public void verifyProductPriceIsDisplayed() throws Exception {

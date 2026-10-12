@@ -3,15 +3,15 @@
 <suite parallel="classes" name="Failed suite [Parallel Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="All Modules - Parallel(failed)">
     <classes>
-      <class name="AddCart.PurchaseSmokeTest">
+      <class name="Login.LoginBVATest">
         <methods>
           <include name="launchApplication"/>
           <include name="beforeSuite"/>
           <include name="closeBrowser"/>
+          <include name="verifyMinimumUsernameInputBehavior"/>
           <include name="afterSuite"/>
-          <include name="verifyCheckoutPageOpensWithProduct"/>
         </methods>
-      </class> <!-- AddCart.PurchaseSmokeTest -->
+      </class> <!-- Login.LoginBVATest -->
     </classes>
   </test> <!-- All Modules - Parallel(failed) -->
 </suite> <!-- Failed suite [Parallel Suite] -->
