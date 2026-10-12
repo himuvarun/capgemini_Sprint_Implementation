@@ -1,0 +1,272 @@
+<html>
+<head>
+<title>TestNG:  Functional Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Functional Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 12 12:31:57 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Functional </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Login.LoginFunctionalTest.verifyUsernameAcceptsValidInput()'><b>verifyUsernameAcceptsValidInput</b><br>Test class: Login.LoginFunctionalTest<br/>
+<a href="#Output-1195615010" onClick='toggleBox("Output-1195615010", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1195615010" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1195615010">
+Username accepted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFunctionalTest@1033576a</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyUserCanCompletePurchase()'><b>verifyUserCanCompletePurchase</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-1993403607" onClick='toggleBox("Output-1993403607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1993403607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1993403607">
+Purchase completed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='Product.ProductFunctionalTest.verifySortNameAToZ()'><b>verifySortNameAToZ</b><br>Test class: Product.ProductFunctionalTest<br/>
+<a href="#Output-1507604180" onClick='toggleBox("Output-1507604180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1507604180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1507604180">
+Name A-Z sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Product.ProductFunctionalTest@2b30a42c</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyProductPriceIsDisplayed()'><b>verifyProductPriceIsDisplayed</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-213850519" onClick='toggleBox("Output-213850519", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-213850519" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-213850519">
+Product price displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='ContactCommunity.ContactCommunityFunctionalTest.verifyBrowserNavigation()'><b>verifyBrowserNavigation</b><br>Test class: ContactCommunity.ContactCommunityFunctionalTest<br/>
+<a href="#Output-113676940" onClick='toggleBox("Output-113676940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-113676940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-113676940">
+Browser navigation behavior verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ContactCommunity.ContactCommunityFunctionalTest@43df23d3</td></tr>
+<tr>
+<td title='ContactCommunity.ContactCommunityFunctionalTest.verifySupportHelpNavigation()'><b>verifySupportHelpNavigation</b><br>Test class: ContactCommunity.ContactCommunityFunctionalTest<br/>
+<a href="#Output-1288168365" onClick='toggleBox("Output-1288168365", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1288168365" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1288168365">
+Footer support/community navigation verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ContactCommunity.ContactCommunityFunctionalTest@43df23d3</td></tr>
+<tr>
+<td title='ContactCommunity.ContactCommunityFunctionalTest.verifyExternalLink()'><b>verifyExternalLink</b><br>Test class: ContactCommunity.ContactCommunityFunctionalTest<br/>
+<a href="#Output-1349166616" onClick='toggleBox("Output-1349166616", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1349166616" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1349166616">
+Selected footer destination verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ContactCommunity.ContactCommunityFunctionalTest@43df23d3</td></tr>
+<tr>
+<td title='ContactCommunity.ContactCommunityFunctionalTest.verifySauceLabsCommunityLink()'><b>verifySauceLabsCommunityLink</b><br>Test class: ContactCommunity.ContactCommunityFunctionalTest<br/>
+<a href="#Output-1376425471" onClick='toggleBox("Output-1376425471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1376425471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1376425471">
+Community/social navigation is accessible<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ContactCommunity.ContactCommunityFunctionalTest@43df23d3</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyProductCanBeRemoved()'><b>verifyProductCanBeRemoved</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-893281161" onClick='toggleBox("Output-893281161", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-893281161" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-893281161">
+Product removal verified<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyCheckoutAcceptsCustomerDetails()'><b>verifyCheckoutAcceptsCustomerDetails</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-146605930" onClick='toggleBox("Output-146605930", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-146605930" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-146605930">
+Customer details accepted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='Product.ProductFunctionalTest.verifySortPriceLowToHigh()'><b>verifySortPriceLowToHigh</b><br>Test class: Product.ProductFunctionalTest<br/>
+<a href="#Output-154795841" onClick='toggleBox("Output-154795841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-154795841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-154795841">
+Price Low-High sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Product.ProductFunctionalTest@2b30a42c</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyProductCanBeAddedToCart()'><b>verifyProductCanBeAddedToCart</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-974861985" onClick='toggleBox("Output-974861985", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-974861985" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-974861985">
+Product added to cart successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='Login.LoginFunctionalTest.verifyPasswordIsMasked()'><b>verifyPasswordIsMasked</b><br>Test class: Login.LoginFunctionalTest<br/>
+<a href="#Output-2016146960" onClick='toggleBox("Output-2016146960", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016146960" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016146960">
+Password masking verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Login.LoginFunctionalTest@1033576a</td></tr>
+<tr>
+<td title='Product.ProductFunctionalTest.verifySortPriceHighToLow()'><b>verifySortPriceHighToLow</b><br>Test class: Product.ProductFunctionalTest<br/>
+<a href="#Output-54879576" onClick='toggleBox("Output-54879576", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54879576" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54879576">
+Price High-Low sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Product.ProductFunctionalTest@2b30a42c</td></tr>
+<tr>
+<td title='AddCart.PurchaseFunctionalTest.verifyOrderConfirmationIsDisplayed()'><b>verifyOrderConfirmationIsDisplayed</b><br>Test class: AddCart.PurchaseFunctionalTest<br/>
+<a href="#Output-994581493" onClick='toggleBox("Output-994581493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994581493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994581493">
+Order confirmation displayed successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>AddCart.PurchaseFunctionalTest@359df09a</td></tr>
+<tr>
+<td title='Product.ProductFunctionalTest.verifySortNameZToA()'><b>verifySortNameZToA</b><br>Test class: Product.ProductFunctionalTest<br/>
+<a href="#Output-1887115844" onClick='toggleBox("Output-1887115844", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887115844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887115844">
+Name Z-A sorting verified<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Product.ProductFunctionalTest@2b30a42c</td></tr>
+</table><p>
+</body>
+</html>
