@@ -1,0 +1,10 @@
+<suite name="Batch Suite">
+	<test name="All Modules - All Testing Types">
+		<packages>
+			<package name="Login"/>
+			<package name="Product"/>
+			<package name="AddCart"/>
+			<package name="ContactCommunity"/>
+		</packages>
+	</test>
+</suite>

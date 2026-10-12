@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM
+        "https://testng.org/testng-1.0.dtd">
+
+<suite name="Integration Suite">
+	<test name="IntegrationTests">
+		<groups>
+			<run>
+				<include name="Integration"/>
+			</run>
+	</groups>
+		<packages>
+			<package name="Login"/>
+			<package name="Product"/>
+			<package name="AddCart"/>
+			<package name="ContactCommunity"/>
+		</packages>
+	</test>
+</suite>

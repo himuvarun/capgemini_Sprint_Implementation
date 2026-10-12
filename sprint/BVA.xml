@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="BVA Suite">
+    <test name="BVA Tests">
+        <classes>
+            <class name="Login.LoginBVATest"/>
+            <class name="Product.ProductBVATest"/>
+            <class name="AddCart.PurchaseBVATest"/>
+            <class name="ContactCommunity.ContactCommunityBVATest"/>
+        </classes>
+    </test>
+</suite>

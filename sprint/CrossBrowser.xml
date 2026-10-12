@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Cross Browser Suite" parallel="tests" thread-count="3">
+
+    <test name="Chrome">
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+
+            <!-- Login -->
+            <class name="Login.LoginSmokeTest"/>
+            <class name="Login.LoginFunctionalTest"/>
+            <class name="Login.LoginNegativeTest"/>
+            <class name="Login.LoginIntegrationTest"/>
+            <class name="Login.LoginSystemTest"/>
+            <class name="Login.LoginBVATest"/>
+
+            <!-- Product -->
+            <class name="Product.ProductSmokeTest"/>
+            <class name="Product.ProductFunctionalTest"/>
+            <class name="Product.ProductNegativeTest"/>
+            <class name="Product.ProductIntegrationTest"/>
+            <class name="Product.ProductSystemTest"/>
+            <class name="Product.ProductBVATest"/>
+
+            <!-- AddCart / Purchase -->
+            <class name="AddCart.PurchaseSmokeTest"/>
+            <class name="AddCart.PurchaseFunctionalTest"/>
+            <class name="AddCart.PurchaseNegativeTest"/>
+            <class name="AddCart.PurchaseIntegrationTest"/>
+            <class name="AddCart.PurchaseSystemTest"/>
+            <class name="AddCart.PurchaseBVATest"/>
+
+            <!-- Contact / Community -->
+            <class name="ContactCommunity.ContactCommunitySmokeTest"/>
+            <class name="ContactCommunity.ContactCommunityFunctionalTest"/>
+            <class name="ContactCommunity.ContactCommunityIntegrationTest"/>
+            <class name="ContactCommunity.ContactCommunitySystemTest"/>
+            <class name="ContactCommunity.ContactCommunityBVATest"/>
+            <class name="ContactCommunity.ContactCommunityNegativeTest"/>
+
+        </classes>
+
+    </test>
+
+
+    <test name="Firefox">
+        <parameter name="browser" value="firefox"/>
+
+        <classes>
+
+            <!-- Login -->
+            <class name="Login.LoginSmokeTest"/>
+            <class name="Login.LoginFunctionalTest"/>
+            <class name="Login.LoginNegativeTest"/>
+            <class name="Login.LoginIntegrationTest"/>
+            <class name="Login.LoginSystemTest"/>
+            <class name="Login.LoginBVATest"/>
+
+            <!-- Product -->
+            <class name="Product.ProductSmokeTest"/>
+            <class name="Product.ProductFunctionalTest"/>
+            <class name="Product.ProductNegativeTest"/>
+            <class name="Product.ProductIntegrationTest"/>
+            <class name="Product.ProductSystemTest"/>
+            <class name="Product.ProductBVATest"/>
+
+            <!-- AddCart / Purchase -->
+            <class name="AddCart.PurchaseSmokeTest"/>
+            <class name="AddCart.PurchaseFunctionalTest"/>
+            <class name="AddCart.PurchaseNegativeTest"/>
+            <class name="AddCart.PurchaseIntegrationTest"/>
+            <class name="AddCart.PurchaseSystemTest"/>
+            <class name="AddCart.PurchaseBVATest"/>
+
+            <!-- Contact / Community -->
+            <class name="ContactCommunity.ContactCommunitySmokeTest"/>
+            <class name="ContactCommunity.ContactCommunityFunctionalTest"/>
+            <class name="ContactCommunity.ContactCommunityIntegrationTest"/>
+            <class name="ContactCommunity.ContactCommunitySystemTest"/>
+            <class name="ContactCommunity.ContactCommunityBVATest"/>
+            <class name="ContactCommunity.ContactCommunityNegativeTest"/>
+
+
+        </classes>
+
+    </test>
+
+
+    <test name="Edge">
+        <parameter name="browser" value="edge"/>
+
+        <classes>
+
+            <!-- Login -->
+            <class name="Login.LoginSmokeTest"/>
+            <class name="Login.LoginFunctionalTest"/>
+            <class name="Login.LoginNegativeTest"/>
+            <class name="Login.LoginIntegrationTest"/>
+            <class name="Login.LoginSystemTest"/>
+            <class name="Login.LoginBVATest"/>
+
+            <!-- Product -->
+            <class name="Product.ProductSmokeTest"/>
+            <class name="Product.ProductFunctionalTest"/>
+            <class name="Product.ProductNegativeTest"/>
+            <class name="Product.ProductIntegrationTest"/>
+            <class name="Product.ProductSystemTest"/>
+            <class name="Product.ProductBVATest"/>
+
+            <!-- AddCart / Purchase -->
+            <class name="AddCart.PurchaseSmokeTest"/>
+            <class name="AddCart.PurchaseFunctionalTest"/>
+            <class name="AddCart.PurchaseNegativeTest"/>
+            <class name="AddCart.PurchaseIntegrationTest"/>
+            <class name="AddCart.PurchaseSystemTest"/>
+            <class name="AddCart.PurchaseBVATest"/>
+
+            <!-- Contact / Community -->
+            <class name="ContactCommunity.ContactCommunitySmokeTest"/>
+            <class name="ContactCommunity.ContactCommunityFunctionalTest"/>
+            <class name="ContactCommunity.ContactCommunityIntegrationTest"/>
+            <class name="ContactCommunity.ContactCommunitySystemTest"/>
+            <class name="ContactCommunity.ContactCommunityBVATest"/>
+            <class name="ContactCommunity.ContactCommunityNegativeTest"/>
+
+
+        </classes>
+
+    </test>
+
+</suite>

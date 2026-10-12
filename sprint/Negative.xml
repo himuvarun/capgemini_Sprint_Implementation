@@ -1,0 +1,15 @@
+<suite name="Negative Suite">
+	<test name="NegativeTests">
+		<groups>
+			<run>
+				<include name="Negative" />
+			</run>
+		</groups>
+		<packages>
+			<package name="Login" />
+			<package name="Product" />
+			<package name="AddCart" />
+			<package name="ContactCommunity" />
+		</packages>
+	</test>
+</suite>

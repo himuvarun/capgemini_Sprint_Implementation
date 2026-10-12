@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BVA Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BVATests(failed)">
+    <groups>
+      <run>
+        <include name="BVA"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Product.ProductBVATest">
+        <methods>
+          <include name="verifyPriceSortingBoundary"/>
+        </methods>
+      </class> <!-- Product.ProductBVATest -->
+      <class name="Login.LoginBVATest">
+        <methods>
+          <include name="verifyMinimumUsernameInputBehavior"/>
+        </methods>
+      </class> <!-- Login.LoginBVATest -->
+      <class name="ContactCommunity.ContactCommunityBVATest">
+        <methods>
+          <include name="verifyBoundaryConditionScenario15"/>
+          <include name="verifyFirstAvailableNavigationOptionBoundary"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunityBVATest -->
+      <class name="AddCart.PurchaseBVATest">
+        <methods>
+          <include name="verifyPostalCodeBoundary"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseBVATest -->
+    </classes>
+  </test> <!-- BVATests(failed) -->
+</suite> <!-- Failed suite [BVA Suite] -->
