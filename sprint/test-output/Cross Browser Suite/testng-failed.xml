@@ -1,18 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Cross Browser Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="Edge(failed)">
-    <parameter name="browser" value="edge"/>
+<suite thread-count="2" parallel="tests" name="Failed suite [Cross Browser Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="AddCart.PurchaseFunctionalTest">
+      <class name="AddCart.PurchaseNegativeTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="verifyAddedProductAppearsInCart"/>
+          <include name="verifyCheckoutRequiresMandatoryData"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
           <include name="closeBrowser"/>
         </methods>
+      </class> <!-- AddCart.PurchaseNegativeTest -->
+      <class name="Login.LoginSystemTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyLoginToProductsFlow"/>
+        </methods>
+      </class> <!-- Login.LoginSystemTest -->
+      <class name="ContactCommunity.ContactCommunityNegativeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyInvalidFooterDestinationIsRejected"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunityNegativeTest -->
+      <class name="Product.ProductFunctionalTest">
+        <methods>
+          <include name="verifySortPriceHighToLow"/>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifySortNameAToZ"/>
+          <include name="verifySortNameZToA"/>
+          <include name="verifySortPriceLowToHigh"/>
+        </methods>
+      </class> <!-- Product.ProductFunctionalTest -->
+      <class name="Product.ProductSystemTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+          <include name="verifyCompleteProductFlow"/>
+        </methods>
+      </class> <!-- Product.ProductSystemTest -->
+      <class name="Product.ProductSmokeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyProductsDisplayed"/>
+        </methods>
+      </class> <!-- Product.ProductSmokeTest -->
+      <class name="AddCart.PurchaseIntegrationTest">
+        <methods>
+          <include name="verifyCheckoutIntegratesWithOrderCompletion"/>
+          <include name="verifyProductToCartIntegration"/>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyCartDetailsTransferToCheckout"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseIntegrationTest -->
+      <class name="Login.LoginIntegrationTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyLoginIntegratesWithProduct"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Login.LoginIntegrationTest -->
+      <class name="ContactCommunity.ContactCommunityBVATest">
+        <methods>
+          <include name="verifyBoundaryConditionScenario15"/>
+          <include name="launchApplication"/>
+          <include name="verifyFirstAvailableNavigationOptionBoundary"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunityBVATest -->
+      <class name="AddCart.PurchaseSmokeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyCartOpensSuccessfully"/>
+          <include name="verifyCheckoutPageOpensWithProduct"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseSmokeTest -->
+      <class name="ContactCommunity.ContactCommunitySystemTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyEndToEndContactCommunityScenario10"/>
+          <include name="beforeSuite"/>
+          <include name="verifyCompleteApplicationToContactCommunityFlow"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunitySystemTest -->
+      <class name="Login.LoginFunctionalTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyPasswordIsMasked"/>
+          <include name="verifyUsernameAcceptsValidInput"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- Login.LoginFunctionalTest -->
+      <class name="Login.LoginNegativeTest">
+        <methods>
+          <include name="verifyLockedUserCannotLogin"/>
+          <include name="launchApplication"/>
+          <include name="verifyInvalidCredentialsShowError"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Login.LoginNegativeTest -->
+      <class name="ContactCommunity.ContactCommunityIntegrationTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyApplicationNavigationIntegratesWithExternalCommunityDestination"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunityIntegrationTest -->
+      <class name="Product.ProductNegativeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="verifyUnauthorizedUserCannotAccessProducts"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- Product.ProductNegativeTest -->
+      <class name="AddCart.PurchaseSystemTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+          <include name="verifyCompletePurchaseFlow"/>
+          <include name="verifyPurchaseWithMultipleProducts"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseSystemTest -->
+      <class name="Login.LoginSmokeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyValidLogin"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Login.LoginSmokeTest -->
+      <class name="Login.LoginBVATest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+          <include name="verifyMinimumUsernameInputBehavior"/>
+        </methods>
+      </class> <!-- Login.LoginBVATest -->
+      <class name="ContactCommunity.ContactCommunityFunctionalTest">
+        <methods>
+          <include name="verifyExternalLink"/>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifySauceLabsCommunityLink"/>
+          <include name="verifyBrowserNavigation"/>
+          <include name="verifySupportHelpNavigation"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunityFunctionalTest -->
+      <class name="AddCart.PurchaseFunctionalTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyUserCanCompletePurchase"/>
+          <include name="verifyOrderConfirmationIsDisplayed"/>
+          <include name="verifyProductPriceIsDisplayed"/>
+          <include name="verifyProductCanBeRemoved"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyProductCanBeAddedToCart"/>
+          <include name="verifyCheckoutAcceptsCustomerDetails"/>
+        </methods>
       </class> <!-- AddCart.PurchaseFunctionalTest -->
+      <class name="Product.ProductIntegrationTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="verifyProductIntegratesWithCart"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- Product.ProductIntegrationTest -->
+      <class name="Product.ProductBVATest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+          <include name="verifyPriceSortingBoundary"/>
+        </methods>
+      </class> <!-- Product.ProductBVATest -->
+      <class name="ContactCommunity.ContactCommunitySmokeTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="closeBrowser"/>
+          <include name="afterSuite"/>
+          <include name="verifyCommunitySupportNavigationIsAvailable"/>
+        </methods>
+      </class> <!-- ContactCommunity.ContactCommunitySmokeTest -->
+      <class name="AddCart.PurchaseBVATest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="closeBrowser"/>
+          <include name="verifyPostalCodeBoundary"/>
+        </methods>
+      </class> <!-- AddCart.PurchaseBVATest -->
     </classes>
-  </test> <!-- Edge(failed) -->
+  </test> <!-- Firefox(failed) -->
 </suite> <!-- Failed suite [Cross Browser Suite] -->
